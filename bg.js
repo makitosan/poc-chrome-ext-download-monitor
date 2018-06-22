@@ -1,6 +1,6 @@
 // Copyright (c) 2018 https://github.com/makitosan . All rights reserved.
 
-// refference https://developer.chrome.com/extensions/downloads#type-DownloadItem
+// reference https://developer.chrome.com/extensions/downloads#type-DownloadItem
 chrome.downloads.onChanged.addListener(function(item) {
   console.log(item);
   if (item.state && item.state.current === "complete") {
